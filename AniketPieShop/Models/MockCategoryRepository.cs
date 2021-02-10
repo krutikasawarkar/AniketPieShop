@@ -1,0 +1,15 @@
+﻿using System.Collections.Generic;
+
+namespace AniketPieShop.Models
+{
+    public class MockCategoryRepository : ICategoryRepository
+    {
+        public IEnumerable<Category> AllCategories =>
+            new List<Category>
+            {
+                new Category{CategoryId=1, CategoryName="Fruit Pies", Description="All fruity pies"},
+                new Category{CategoryId=1, CategoryName="Cheese cakes", Description="Cheesy all the way"},
+                new Category{CategoryId=1, CategoryName="Swasonal pies", Description="Get in the mood for a seasonal pie"}
+            };
+    }
+}
